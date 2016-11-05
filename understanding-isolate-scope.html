@@ -8,6 +8,15 @@
 		<!-- Custom  Angular directive-->
 		<kid done="logChore(task)"></kid>	
 	</div>
+	<br>
+	<div ng-controller="drinkCtrl">
+		<!-- Custom  Angular directive-->
+		<p>From Ctrl</p>
+		<input type="text" ng-model="ctrlFlavor">
+
+		<p>From Directive</p>
+		<div drink flavor="ctrlFlavor"></div>	
+	</div>
 	<!-- Angular Library -->
 	<script src="js/angular.min.js"></script>
 
